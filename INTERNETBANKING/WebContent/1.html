@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" type="text/css" href="mouseovertabs.css" />
+
+<script src="mouseovertabs.js" type="text/javascript">
+</script>
+ </head>
+
+ <body>
+  <div id="mytabsmenu" class="tabsmenuclass">
+<ul>
+<li><a href="Controller?action=home" rel="gotsubmenu[selected]"><img src="home.jpg" alt="Home" width="70" height="55" border="0" ></a></li>
+<li><a href="Controller?action=contact" rel="gotsubmenu"><img src="contact.jpg" alt="Contact Us" width="70" height="55" border="0" /></a></li>
+<li><a href="Controller?action=registration"><img src="registration.jpg" alt="REGITRATION" width="70" height="55" border="0" /></a></li>
+</ul>
+</div>
+<div id="mysubmenuarea" class="tabsmenucontentclass">
+<!--1st link within submenu container should point to the external submenu contents file-->
+<a href="submenucontents.htm" style="visibility:hidden">Sub Menu contents</a>
+</div>
+<script type="text/javascript">
+//mouseovertabsmenu.init("tabs_container_id", "submenu_container_id", "bool_hidecontentsmouseout")
+mouseovertabsmenu.init("mytabsmenu", "mysubmenuarea", true)
+</script>
+ </body>
+</html>
